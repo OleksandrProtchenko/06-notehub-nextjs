@@ -1,7 +1,7 @@
 "use client";
 
 import useModal from "@/components/hooks/useModal";
-import { fetchNotes } from "@/lib/api/api";
+import { fetchNotes } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
