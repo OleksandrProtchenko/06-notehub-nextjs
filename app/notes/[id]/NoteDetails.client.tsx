@@ -12,7 +12,7 @@ export default function NoteDetails() {
     isLoading,
     isError,
   } = useQuery({
-    queryKey: ["notes"],
+    queryKey: ["notes", id],
     queryFn: () => fetchNoteById(id),
     refetchOnMount: false,
   });
